@@ -38,7 +38,7 @@ totalEmissions$fips<-as.factor(totalEmissions$fips)
 #ploting
 png("plot6.png",width=600)
 ggplot(data=totalEmissions,aes(year,totalEmission)) +
-ggtitle("Total PM2.5 emission in the Baltimore City, Maryland by year") +
+ggtitle("Total PM2.5 emission in the Baltimore City, Maryland and Los Angeles County by year") +
 xlab("Year")+ylab("Total PM2.5 emission")+geom_bar(stat="identity")+
   facet_grid(. ~ fips)
 
